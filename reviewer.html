@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amara J. — Reviewer Profile · 121212.reviews</title>
+  <meta name="description" content="Amara J. reviews Hair & Beauty, Fashion, and Wellness products across the 121212 ecosystem. Verified buyer. Real opinions. Affiliate links." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav id="mainNav">
+    <div class="nav-content">
+      <a href="index.html" class="logo"><span class="star">★</span> 121212<span>.reviews</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="reviews.html">Browse Reviews</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="submit.html">Become a Reviewer</a></li>
+        <li><a href="submit.html" class="nav-cta">Write a Review</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- ── Profile Hero ── -->
+  <div class="profile-hero">
+    <div class="profile-hero-cover"></div>
+    <div class="profile-hero-inner">
+
+      <div class="profile-top-row">
+        <div class="profile-avatar-wrap">
+          <div class="profile-avatar">A</div>
+          <div class="profile-verified" title="Verified Reviewer">★</div>
+        </div>
+
+        <div class="profile-identity">
+          <div class="profile-name-row">
+            <h1 class="profile-name">Amara J.</h1>
+            <span class="badge badge-gold">Top Reviewer</span>
+            <span class="badge badge-purple">Hair & Beauty</span>
+          </div>
+          <div class="profile-handle">amaraj.121212.reviews</div>
+          <p class="profile-bio">
+            4C natural. Houston native. I review what I actually buy — hair, skin, fashion, music.
+            If it's on my page it passed the test. No ads. No gifted products. Just the real thing.
+          </p>
+          <div class="profile-meta-row">
+            <span class="profile-meta-item">📍 Houston, TX</span>
+            <span class="profile-meta-item">🗓 Reviewing since Jan 2025</span>
+            <span class="profile-meta-item">🔗 <a href="https://121212.community" style="color: var(--gold-light);">atlanta.121212.community</a></span>
+          </div>
+        </div>
+
+        <div class="profile-actions">
+          <button class="btn btn-gold btn-sm" id="followBtn" onclick="toggleFollow(this)">+ Follow</button>
+          <button class="btn btn-secondary btn-sm" onclick="shareProfile()">↑ Share</button>
+        </div>
+      </div>
+
+      <!-- Stat strip -->
+      <div class="profile-stats-strip">
+        <div class="profile-stat">
+          <div class="profile-stat-val">47</div>
+          <div class="profile-stat-lbl">Reviews</div>
+        </div>
+        <div class="profile-stat-divider"></div>
+        <div class="profile-stat">
+          <div class="profile-stat-val">4.9 ★</div>
+          <div class="profile-stat-lbl">Avg Rating</div>
+        </div>
+        <div class="profile-stat-divider"></div>
+        <div class="profile-stat">
+          <div class="profile-stat-val">3.2K</div>
+          <div class="profile-stat-lbl">Clicks</div>
+        </div>
+        <div class="profile-stat-divider"></div>
+        <div class="profile-stat">
+          <div class="profile-stat-val">6</div>
+          <div class="profile-stat-lbl">Categories</div>
+        </div>
+        <div class="profile-stat-divider"></div>
+        <div class="profile-stat">
+          <div class="profile-stat-val">142</div>
+          <div class="profile-stat-lbl">Followers</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Category Specialties ── -->
+  <div class="profile-specialties-bar">
+    <div class="profile-specialties-inner">
+      <span class="profile-spec-label">Specializes in</span>
+      <div class="profile-spec-tags">
+        <a href="reviews.html?cat=hair" class="profile-spec-tag active">💆 Hair & Beauty</a>
+        <a href="reviews.html?cat=wellness" class="profile-spec-tag">✨ Wellness & Skincare</a>
+        <a href="reviews.html?cat=fashion" class="profile-spec-tag">👗 Fashion & Style</a>
+        <a href="reviews.html?cat=jewelry" class="profile-spec-tag">💛 Jewelry & Accessories</a>
+        <a href="reviews.html?cat=food" class="profile-spec-tag">🍽 Food & Eats</a>
+        <a href="reviews.html?cat=music" class="profile-spec-tag">🎵 Music & Albums</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Reviews Feed ── -->
+  <section class="section">
+    <div class="section-inner">
+
+      <div class="profile-feed-header">
+        <div>
+          <span class="section-label">Reviews by Amara J.</span>
+          <h2 class="section-title" style="margin-bottom: 0;">47 Verified Reviews</h2>
+        </div>
+        <div class="profile-feed-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="hair">Hair & Beauty</button>
+          <button class="filter-btn" data-filter="wellness">Wellness</button>
+          <button class="filter-btn" data-filter="fashion">Fashion</button>
+          <button class="filter-btn" data-filter="music">Music</button>
+        </div>
+      </div>
+
+      <div class="reviews-grid" style="margin-top: 2.5rem;" id="profileReviews">
+
+        <!-- Review 1 -->
+        <div class="review-card" data-cat="hair">
+          <div class="review-card-top">
+            <div class="review-product-emoji">💆</div>
+            <div class="review-card-badges">
+              <span class="badge badge-gold">★ Verified Purchase</span>
+              <span class="badge badge-purple">Hair & Beauty</span>
+            </div>
+            <div class="review-product-name">Natural Hair Regimen Kit</div>
+            <div class="review-stars-row">
+              <div class="stars">★★★★★</div>
+              <span class="review-rating-num">5.0</span>
+              <span class="review-count">121212.market</span>
+            </div>
+          </div>
+          <div class="review-card-body">
+            <div class="review-headline">"This kit completely changed my wash day routine."</div>
+            <p class="review-excerpt">
+              The scalp oil alone is worth the price — I saw new growth within 6 weeks.
+              The moisture retention is unreal for 4C hair. I've tried every major brand and this
+              is the first kit that actually delivers on every promise. The sealing butter
+              keeps my ends moisturized for days.
+            </p>
+            <a href="reviews.html" class="btn-affiliate">★ Shop via Amara's Link</a>
+          </div>
+          <div class="review-card-footer">
+            <div class="reviewer-row">
+              <div class="reviewer-avatar">A</div>
+              <div>
+                <div class="reviewer-name">Amara J.</div>
+                <div class="reviewer-badge">★ Top Reviewer</div>
+              </div>
+            </div>
+            <div style="font-size: 0.72rem; color: var(--text-muted);">Feb 20, 2025</div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card" data-cat="wellness">
+          <div class="review-card-top">
+            <div class="review-product-emoji">✨</div>
+            <div class="review-card-badges">
+              <span class="badge badge-gold">★ Verified Purchase</span>
+              <span class="badge badge-dim">Wellness & Skincare</span>
+            </div>
+            <div class="review-product-name">Shea Butter Luxury Set</div>
+            <div class="review-stars-row">
+              <div class="stars">★★★★<span class="empty">☆</span></div>
+              <span class="review-rating-num">4.0</span>
+              <span class="review-count">121212.market</span>
+            </div>
+          </div>
+          <div class="review-card-body">
+            <div class="review-headline">"Genuinely luxurious — but the pump dispenser needs work."</div>
+            <p class="review-excerpt">
+              The formula is incredible. Absorbs fast, no greasy residue, and the
+              scent profile is subtle enough for daily wear. My skin has been
+              noticeably more hydrated. Only reason it's not 5 stars: the pump
+              clogs after about a week of use. 4/5 on the product, 2/5 on the packaging.
+            </p>
+            <a href="reviews.html" class="btn-affiliate">★ Shop via Amara's Link</a>
+          </div>
+          <div class="review-card-footer">
+            <div class="reviewer-row">
+              <div class="reviewer-avatar">A</div>
+              <div>
+                <div class="reviewer-name">Amara J.</div>
+                <div class="reviewer-badge">★ Top Reviewer</div>
+              </div>
+            </div>
+            <div style="font-size: 0.72rem; color: var(--text-muted);">Feb 9, 2025</div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card" data-cat="fashion">
+          <div class="review-card-top">
+            <div class="review-product-emoji">👜</div>
+            <div class="review-card-badges">
+              <span class="badge badge-gold">★ Verified Purchase</span>
+              <span class="badge badge-dim">Fashion & Style</span>
+            </div>
+            <div class="review-product-name">Handwoven Kente Tote Bag</div>
+            <div class="review-stars-row">
+              <div class="stars">★★★★★</div>
+              <span class="review-rating-num">5.0</span>
+              <span class="review-count">121212.market</span>
+            </div>
+          </div>
+          <div class="review-card-body">
+            <div class="review-headline">"The craftsmanship is exceptional. This is what quality looks like."</div>
+            <p class="review-excerpt">
+              Heavy-duty stitching, vibrant colors that haven't faded after months of constant
+              use. The interior is lined and has two zip pockets. Ships fast. I've gotten
+              more compliments on this bag than anything else I own. Black-owned and
+              worth every dollar.
+            </p>
+            <a href="reviews.html" class="btn-affiliate">★ Shop via Amara's Link</a>
+          </div>
+          <div class="review-card-footer">
+            <div class="reviewer-row">
+              <div class="reviewer-avatar">A</div>
+              <div>
+                <div class="reviewer-name">Amara J.</div>
+                <div class="reviewer-badge">★ Top Reviewer</div>
+              </div>
+            </div>
+            <div style="font-size: 0.72rem; color: var(--text-muted);">Mar 11, 2025</div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card" data-cat="music">
+          <div class="review-card-top">
+            <div class="review-product-emoji">🎵</div>
+            <div class="review-card-badges">
+              <span class="badge badge-gold">★ Verified Purchase</span>
+              <span class="badge badge-dim">Music & Albums</span>
+            </div>
+            <div class="review-product-name">Midnight Frequencies — Full Album</div>
+            <div class="review-stars-row">
+              <div class="stars">★★★★★</div>
+              <span class="review-rating-num">5.0</span>
+              <span class="review-count">121212.music</span>
+            </div>
+          </div>
+          <div class="review-card-body">
+            <div class="review-headline">"AfroBeat Collective hit different on this one. Instant classic."</div>
+            <p class="review-excerpt">
+              Every track flows into the next like it was scored for a film.
+              "Lagos at 2AM" and "Motherland Rising" should be on every playlist.
+              The production is clean, the vocals are raw and honest.
+              Been on repeat for weeks. This is what 121212.music is for.
+            </p>
+            <a href="reviews.html" class="btn-affiliate">★ Stream via Amara's Link</a>
+          </div>
+          <div class="review-card-footer">
+            <div class="reviewer-row">
+              <div class="reviewer-avatar">A</div>
+              <div>
+                <div class="reviewer-name">Amara J.</div>
+                <div class="reviewer-badge">★ Top Reviewer</div>
+              </div>
+            </div>
+            <div style="font-size: 0.72rem; color: var(--text-muted);">Feb 22, 2025</div>
+          </div>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="review-card" data-cat="hair">
+          <div class="review-card-top">
+            <div class="review-product-emoji">💛</div>
+            <div class="review-card-badges">
+              <span class="badge badge-gold">★ Verified Purchase</span>
+              <span class="badge badge-dim">Jewelry & Accessories</span>
+            </div>
+            <div class="review-product-name">Gold Brass Statement Earrings</div>
+            <div class="review-stars-row">
+              <div class="stars">★★★★<span class="empty">☆</span></div>
+              <span class="review-rating-num">4.0</span>
+              <span class="review-count">121212.market</span>
+            </div>
+          </div>
+          <div class="review-card-body">
+            <div class="review-headline">"Striking design. Lightweight despite the size. Worth it."</div>
+            <p class="review-excerpt">
+              I wear these to everything — work, events, date night. The gold tone
+              has held up beautifully after months of wear. Lightweight enough that
+              I forget I have them on. Handmade quality at a price that makes sense.
+              Would have been 5 stars if the clasp was easier to fasten solo.
+            </p>
+            <a href="reviews.html" class="btn-affiliate">★ Shop via Amara's Link</a>
+          </div>
+          <div class="review-card-footer">
+            <div class="reviewer-row">
+              <div class="reviewer-avatar">A</div>
+              <div>
+                <div class="reviewer-name">Amara J.</div>
+                <div class="reviewer-badge">★ Top Reviewer</div>
+              </div>
+            </div>
+            <div style="font-size: 0.72rem; color: var(--text-muted);">Jan 23, 2025</div>
+          </div>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="review-card" data-cat="wellness">
+          <div class="review-card-top">
+            <div class="review-product-emoji">🌿</div>
+            <div class="review-card-badges">
+              <span class="badge badge-gold">★ Verified Purchase</span>
+              <span class="badge badge-green">Editor's Pick</span>
+            </div>
+            <div class="review-product-name">Beeswax & Shea Edge Control Kit</div>
+            <div class="review-stars-row">
+              <div class="stars">★★★★★</div>
+              <span class="review-rating-num">5.0</span>
+              <span class="review-count">121212.market</span>
+            </div>
+          </div>
+          <div class="review-card-body">
+            <div class="review-headline">"The only edge control that actually holds all day in Houston humidity."</div>
+            <p class="review-excerpt">
+              I live in Houston. Humidity is not optional. I have tried every
+              edge control on the market and nothing has come close to this.
+              Holds from 7am to 10pm without flaking, without crunch, without
+              the white cast. The beeswax base is what does it.
+              Non-negotiable part of my routine now.
+            </p>
+            <a href="reviews.html" class="btn-affiliate">★ Shop via Amara's Link</a>
+          </div>
+          <div class="review-card-footer">
+            <div class="reviewer-row">
+              <div class="reviewer-avatar">A</div>
+              <div>
+                <div class="reviewer-name">Amara J.</div>
+                <div class="reviewer-badge">★ Top Reviewer</div>
+              </div>
+            </div>
+            <div style="font-size: 0.72rem; color: var(--text-muted);">Jan 12, 2025</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="reviews.html" class="btn btn-secondary">Browse All Reviews on 121212.reviews</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Affiliate Disclosure ── -->
+  <div style="padding: 0 2rem 3rem;">
+    <div style="max-width: 1280px; margin: 0 auto;">
+      <p class="affiliate-disclosure">
+        <strong>Affiliate Disclosure:</strong> Amara J. is a verified reviewer in the 121212.reviews affiliate program.
+        Links on this page may generate a commission if you make a purchase — at no additional cost to you.
+        All reviews are based on personal purchases and honest experience. No gifted products. No paid placements.
+        <a href="affiliates.html" style="color: var(--gold-light);">Full affiliate program terms →</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- ── CTA ── -->
+  <section class="cta-section" style="padding-top: 4rem;">
+    <div class="cta-inner">
+      <h2>Want Your Own Reviewer Profile?</h2>
+      <p>Apply to join the 121212.reviews network. Write honest reviews, earn affiliate income, and build your page at <span style="color: var(--gold-light); font-family: monospace;">you.121212.reviews</span>.</p>
+      <div class="cta-buttons">
+        <a href="submit.html" class="btn btn-gold">Become a Reviewer</a>
+        <a href="about.html" class="btn btn-secondary">How It Works</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><span class="star">★</span> 121212<span>.reviews</span></a>
+          <p>Trusted reviews across the 121212 ecosystem.</p>
+          <div class="footer-contact">
+            <a href="mailto:reviews@121212.reviews">reviews@121212.reviews</a>
+            <a href="mailto:support@121212.reviews">support@121212.reviews</a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Platform</h4><ul>
+          <li><a href="reviews.html">Browse Reviews</a></li>
+          <li><a href="submit.html">Become a Reviewer</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Ecosystem</h4><ul>
+          <li><a href="#">121212.market</a></li><li><a href="#">121212.music</a></li>
+          <li><a href="#">121212.community</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="refunds.html">Refund Policy</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="affiliates.html">Affiliate Program</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-legal">&copy; 2025 121212.reviews. All rights reserved. Operated by MCM Enterprises.</div>
+        <div class="footer-ecosystem">
+          <a href="#">121212.market</a><a href="#">121212.music</a>
+          <a href="#">121212.fun</a><a href="#">121212.community</a>
+          <a href="#">121212.law</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Profile-specific interactions
+    function toggleFollow(btn) {
+      const following = btn.dataset.following === 'true'
+      btn.dataset.following = following ? 'false' : 'true'
+      btn.textContent = following ? '+ Follow' : '✓ Following'
+      btn.style.background = following ? '' : 'var(--green)'
+      btn.style.color = following ? '' : '#fff'
+    }
+
+    function shareProfile() {
+      const url = 'amaraj.121212.reviews'
+      if (navigator.share) {
+        navigator.share({ title: 'Amara J. on 121212.reviews', url: window.location.href })
+      } else if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(() => {
+          const btn = event.target
+          const orig = btn.textContent
+          btn.textContent = '✓ Copied!'
+          setTimeout(() => btn.textContent = orig, 2000)
+        })
+      }
+    }
+
+    // Category filter on profile feed
+    ;(function () {
+      const btns = document.querySelectorAll('.profile-feed-filters .filter-btn')
+      const cards = document.querySelectorAll('#profileReviews .review-card[data-cat]')
+      btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          btns.forEach(b => b.classList.remove('active'))
+          btn.classList.add('active')
+          const f = btn.dataset.filter
+          cards.forEach(card => {
+            card.style.display = (f === 'all' || card.dataset.cat === f) ? '' : 'none'
+          })
+        })
+      })
+    })()
+  </script>
+</body>
+</html>
