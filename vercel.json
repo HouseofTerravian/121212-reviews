@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "(?<handle>(?!www$)[^.]+)\\.121212\\.reviews" }
+      ],
+      "destination": "/reviewer.html"
+    }
+  ]
+}
